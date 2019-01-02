@@ -1,118 +1,115 @@
-/* Dracula Theme v1.2.0
+/* Dank Neon Theme v0.0.1
  *
- * https://github.com/zenorocha/dracula-theme
+ * https://github.com/DankNeon/chrome-devtools
  *
- * Copyright 2015, All rights reserved
+ * Copyright 2018, All rights reserved
  *
- * Code licensed under the MIT license
- * http://zenorocha.mit-license.org
  *
- * @author Zeno Rocha <hi@zenorocha.com>
- * @author Jack Saunders <hi@zenorocha.com>
+ * @author Conlin Durbin <sup@wuz.fyi>
  */
 @theme-type: dark;
 
-// Dracula Default Colours
+// Dank Neon Default Colours
 
-@drac-bg : #282a36;
-@drac-current-line: #44475a;
-@drac-selection : #44475a;
-@drac-foreground : #f8f8f2;
-@drac-comment : #6272a4;
-@drac-cyan : #8be9fd;
-@drac-green : #50fa7b;
-@drac-orange : #ffb86c;
-@drac-pink : #ff79c6;
-@drac-purple : #bd93f9;
-@drac-red : #ff5555;
-@drac-yellow : #f1fa8c;
+@dank-bg : #292e46;
+@dank-current-line: #44475a;
+@dank-selection : #44475a;
+@dank-foreground : #eff0f6;
+@dank-comment : #858db7;
+@dank-cyan : #66d9ef;
+@dank-green : #77dcb8;
+@dank-orange : #ffe25e;
+@dank-blue : #3887ff;
+@dank-purple : #ae81ff;
+@dank-red : #f92672;
+@dank-yellow : #f1fa8c;
 
 // Global Settings
 @text-height : 14px;
-@global-accent : @drac-pink;
-@global-arrow : @drac-foreground;
-@global-background: @drac-bg;
+@global-accent : @dank-red;
+@global-arrow : @dank-foreground;
+@global-background: @dank-bg;
 @global-boxshadow : rgba(17,17,17,.6);
 @global-divider : lighten(@global-background, 10%);
 @global-hover : lighten(@global-background, 10%);
 @global-input : #111;
 @global-toolbar : rgba(17,17,17,.6);
-@global-selected : @drac-selection;
-@global-text : @drac-foreground;
-@global-label : @drac-comment;
-@global-warn : @drac-yellow;
-@global-error : @drac-red;
+@global-selected : @dank-selection;
+@global-text : @dank-foreground;
+@global-label : @dank-comment;
+@global-warn : @dank-yellow;
+@global-error : @dank-red;
 @global-textshadow: darken(@global-background, 4%);
 
 // JavaScript
-@js-atom : @drac-purple;
-@js-attribute : @drac-foreground;
+@js-atom : @dank-purple;
+@js-attribute : @dank-foreground;
 @js-builtin : #8da6ce;
-@js-comment : @drac-comment;
-@js-def : @drac-green;
-@js-error : @drac-red;
+@js-comment : @dank-comment;
+@js-def : @dank-green;
+@js-error : @dank-red;
 @js-header : #ff6400;
-@js-hr : #aeaeae;
-@js-keyword : @drac-pink;
+@js-hr : #4f5987;
+@js-keyword : @dank-red;
 @js-link : #8da6ce;
 @js-meta : #d8fa3c;
-@js-number : @drac-purple;
-@js-operator : @drac-pink;
-@js-property : @drac-cyan;
-@js-string : @drac-yellow;
-@js-tag : @drac-cyan;
-@js-variable : @drac-cyan;
-@js-variable-2: @drac-foreground;
+@js-number : @dank-purple;
+@js-operator : @dank-red;
+@js-property : @dank-cyan;
+@js-string : @dank-yellow;
+@js-tag : @dank-cyan;
+@js-variable : @dank-cyan;
+@js-variable-2: @dank-foreground;
 
 // JavaScript Objects
 @js-obj-array : #7c7c7c;
 @js-obj-boolean : #89f5a2;
 @js-obj-function : #8b6ccf;
-@js-obj-name : @drac-cyan;
-@js-obj-number : @drac-purple;
+@js-obj-name : @dank-cyan;
+@js-obj-number : @dank-purple;
 @js-obj-preview : #ddd;
-@js-obj-regexp : @drac-pink;
-@js-obj-string : @drac-yellow;
+@js-obj-regexp : @dank-red;
+@js-obj-string : @dank-yellow;
 @js-obj-undefined: #ad4e4e;
 
 // CSS
-@css-at-rule : @drac-pink;
-@css-atom : @drac-purple;
-@css-builtin : @drac-cyan;
-@css-comment : @drac-comment;
-@css-def : @drac-green;
-@css-important : @drac-pink;
-@css-meta : @drac-foreground;
-@css-number : @drac-purple;
-@css-operator : @drac-pink;
-@css-property : @drac-cyan;
-@css-qualifier : @drac-green;
-@css-string : @drac-yellow;
-@css-string-2 : darken(@drac-foreground, 10%);
-@css-tag : @drac-green;
-@css-variable : @drac-cyan;
-@css-variable-2: @drac-cyan;
+@css-at-rule : @dank-red;
+@css-atom : @dank-purple;
+@css-builtin : @dank-cyan;
+@css-comment : @dank-comment;
+@css-def : @dank-green;
+@css-important : @dank-red;
+@css-meta : @dank-foreground;
+@css-number : @dank-purple;
+@css-operator : @dank-red;
+@css-property : @dank-cyan;
+@css-qualifier : @dank-green;
+@css-string : @dank-yellow;
+@css-string-2 : darken(@dank-foreground, 10%);
+@css-tag : @dank-green;
+@css-variable : @dank-cyan;
+@css-variable-2: @dank-cyan;
 
 // HTML Highlighting
-@xml-attribute : @drac-green;
-@xml-comment : @drac-comment;
-@xml-error : @drac-red;
-@xml-iframe-root : @drac-yellow;
-@xml-js-node : @drac-comment;
-@xml-link : @drac-yellow;
-@xml-pseudo : @drac-green;
-@xml-pseudo-highlighted: @drac-green;
-@xml-shadow-root : @drac-orange;
-@xml-string : @drac-yellow;
-@xml-tag : @drac-pink;
+@xml-attribute : @dank-green;
+@xml-comment : @dank-comment;
+@xml-error : @dank-red;
+@xml-iframe-root : @dank-yellow;
+@xml-js-node : @dank-comment;
+@xml-link : @dank-yellow;
+@xml-pseudo : @dank-green;
+@xml-pseudo-highlighted: @dank-green;
+@xml-shadow-root : @dank-orange;
+@xml-string : @dank-yellow;
+@xml-tag : @dank-red;
 
 // Tabbed Header Configuration
 @tab-color-top : lighten(@global-background, 18%);
 @tab-color-bottom : lighten(@global-background, 8%);
 @tab-highlighted : @global-accent;
 @tab-label : #888;
-@tab-label-selected : @drac-foreground;
-@tab-label-unsaved : @drac-yellow;
+@tab-label-selected : @dank-foreground;
+@tab-label-unsaved : @dank-yellow;
 
 // Toolbars
 @toolbar-main: @global-background;
@@ -128,12 +125,12 @@
 
 // Crumbs
 @crumb-selected-background: @global-selected;
-@crumb-selected-text : @drac-foreground;
+@crumb-selected-text : @dank-foreground;
 @crumb-text : @global-text;
 
 // Console
 @console-default-text: @global-text;
-@console-input-text : @drac-foreground;
+@console-input-text : @dank-foreground;
 @console-link : #888;
 
 // Dialog [Ctrl/Cmd + O | Ctrl/Cmd + Shift + O]
@@ -144,8 +141,8 @@
 @dialog-item-text : lighten(@global-text, 10%);
 
 // Editor Properties
-@cm-cursor : @drac-foreground;
-@cm-error : @drac-red;
+@cm-cursor : @dank-foreground;
+@cm-error : @dank-red;
 @cm-gutter : lighten(@global-background, 4%);
 @cm-gutter-border : lighten(@global-background, 5%);
 @cm-gutter-lines : lighten(@global-background, 40%);
@@ -179,11 +176,11 @@
 @filter-selected : lighten(@global-background, 15%);
 @filter-selected-text: lighten(@global-text, 15%);
 @filter-error : @global-error;
-@filter-warning : @drac-yellow;
-@filter-info : @drac-purple;
-@filter-log : @drac-cyan;
-@filter-debug : @drac-pink;
-@filter-verbose : @drac-pink;
+@filter-warning : @dank-yellow;
+@filter-info : @dank-purple;
+@filter-log : @dank-cyan;
+@filter-debug : @dank-red;
+@filter-verbose : @dank-red;
 
 // Find
 @find-header-background : lighten(@global-background, 3%);
@@ -203,7 +200,7 @@
 @form-label-text : @global-text;
 
 // Local Modifications
-@history-added-text : @drac-green;
+@history-added-text : @dank-green;
 @history-removed-text: @global-error;
 
 // Screencast
@@ -220,11 +217,11 @@
 @settings-background : #444;
 @settings-border : #454545;
 @settings-delimiter : #eee;
-@settings-dialog : @drac-comment;
+@settings-dialog : @dank-comment;
 @settings-edit-background : #222;
 @settings-folder-background: #222;
 @settings-selected : rgba(150, 255, 150, 0.2);
-@settings-text : @drac-comment;
+@settings-text : @dank-comment;
 
 // Table/Sidebar Selections | Breakpoints
 @selection-background: @global-selected;
@@ -258,7 +255,7 @@
 
 // Popovers
 @popover-background : @global-background;
-@popover-details-row-title: @drac-cyan;
-@popover-details-title : @drac-yellow;
-@popover-title : @drac-pink;
+@popover-details-row-title: @dank-cyan;
+@popover-details-title : @dank-yellow;
+@popover-title : @dank-red;
 @popover-tree-border : #888;
